@@ -1,6 +1,6 @@
 # 安裝步驟
 
-1. 下載[vscode-all-in-one.zip]()
+1. 下載[vscode-all-in-one.zip](https://github.com/CNOCycle/cpp_tutorial/releases/download/win-mingw-vscode/vscode-all-in-one.zip)
 2. 解壓縮縮後，將檔案放到路徑`%USERPROFILE%`
 3. 將`%USERPROFILE%\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin`加入到環境變數`Path`
 4. 完成

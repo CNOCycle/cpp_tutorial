@@ -1,4 +1,4 @@
-From codercom/code-server
+FROM codercom/code-server
 
 USER coder
 RUN sudo apt update && \

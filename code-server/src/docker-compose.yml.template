@@ -1,0 +1,15 @@
+
+    code-server_{USER_ID}:
+        image:  {IMG_NAME}
+        container_name: cnt_server_{USER_ID}
+        ports:
+            - "{USER_ID_PORT}:8080"
+        networks:
+            - frontend
+        volumes:
+            - ./srv/{USER_ID}/config:/home/coder/.config/code-server/
+            - ./srv/shared:/shared:ro
+
+        mem_limit: 768m
+        cpus: 1.0
+

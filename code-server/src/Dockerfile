@@ -10,7 +10,7 @@ RUN sudo apt update && \
 
 # install cmake
 RUN sudo apt update && \
-    sudo apt install libssl-dev && \
+    sudo apt install -y libssl-dev && \
     wget https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2.tar.gz && \
     tar xvf cmake-3.21.2.tar.gz && \
     cd cmake-3.21.2 && \

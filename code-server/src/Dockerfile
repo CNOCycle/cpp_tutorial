@@ -1,4 +1,4 @@
-FROM codercom/code-server
+FROM codercom/code-server:3.11.1
 
 USER coder
 
@@ -22,6 +22,6 @@ RUN sudo apt update && \
     sudo rm -rf /var/lib/apt/lists/*
 
 # install vscode extension
-RUN curl -L https://github.com/microsoft/vscode-cpptools/releases/download/1.6.0/cpptools-linux.vsix --output cpptools-linux.vsix && \
+RUN curl -L https://github.com/microsoft/vscode-cpptools/releases/download/1.5.1/cpptools-linux.vsix --output cpptools-linux.vsix && \
     code-server --install-extension cpptools-linux.vsix && \
     rm -rf cpptools-linux.vsix

@@ -14,7 +14,9 @@
 ![extract_files](./fig_02-extract_files.png)
 
 * 將`%USERPROFILE%\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin`加入到環境變數`Path`，如下圖示範：
+* (中文版請搜尋`環境變數`)
 ![var_editor](./fig_03-var_editor.png)
+* (每一台電腦的設定不一樣，建議將該路徑優先權提升至最高的位置)
 ![add_var](./fig_04-add_var.png)
 
 # 測試編譯以及除錯

@@ -17,7 +17,7 @@ coder@924ed809ef27:~$ pwd
 /home/coder
 coder@924ed809ef27:~$ cd spdlog-1.9.2/
 coder@924ed809ef27:~$ pwd
-/home/coder
+/home/coder/spdlog-1.9.2/
 coder@924ed809ef27:~/spdlog-1.9.2$ cd ..
 coder@924ed809ef27:~$ pwd
 /home/coder
@@ -114,7 +114,7 @@ coder@924ed809ef27:~$ rmdir new_folder/
 coder@924ed809ef27:~$ ls
 a.out  basic_commands.md  b.out  new.cpp  spdlog-1.9.2  test.cpp  v1.9.2.tar.gz
 coder@924ed809ef27:~$ rm spdlog-1.9.2/
-rm: cannot remove 'spdlog-1.9.2/': Is a directory
+rmdir: failed to remove 'spdlog-1.9.2/': Directory not empty
 ```
 
 ## `rm`

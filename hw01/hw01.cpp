@@ -17,8 +17,13 @@ int main()
     x2 = (-b - s) / (2 * a);
     /*******************************/
 
+    float err1, err2;
+    err1 = std::abs( (x1 - ans1) / ans1 ) * 100;
+    err2 = std::abs( (x2 - ans2) / ans2 ) * 100;
+
     std::cout << "ans[#], root[#], error[%]\n";
-    std::cout << ans1 << "\t" << x1 << "\t" <<  std::abs(x1 - ans1) / ans1 * 100 << std::endl;
-    std::cout << ans2 << "\t" << x2 << "\t" <<  std::abs(x2 - ans2) / ans2 * 100 << std::endl;
+    std::cout << ans1 << "\t" << x1 << "\t" <<  err1 << std::endl;
+    std::cout << ans2 << "\t" << x2 << "\t" <<  err2 << std::endl;
     return 0;
 }
+

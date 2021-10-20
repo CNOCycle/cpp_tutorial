@@ -19,7 +19,7 @@ int main()
     std::cout << "-----\n";
     {
         int a = 20;
-        if(a == 30)
+        if(a == 20)
         {
             std::cout << "a = 20\n";
         }

@@ -7,9 +7,6 @@ int main()
     int MAX = 8;
     size_t length = 1;
 
-
-    MAX = 8;
-    length = 1;
     for(int ii = 0; ii < MAX; ii = ii + 1, length = length * 10)
     {
         std::vector<double> a(length);

@@ -3,7 +3,7 @@
 
 int main()
 {
-    // const should be declated with uppercase
+    // const should be declared with uppercase
     const size_t SIZE = 50;
 
     // create vector by given size

@@ -45,13 +45,6 @@ int main()
     std::string c = " world";
     std::string d = b + c;
     std::cout << d << "\n";
-    //for(int ii = 0; ii <= d.size(); ii = ii + 1)
-    //{
-    //    e[ii] = b[ii] + c[ii];
-    //}
-    //
-    // std::vector<int> a(10);
-    // std::cout << a << "\n"; (?)
     /*****************************/
 
     return 0;

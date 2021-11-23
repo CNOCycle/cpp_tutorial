@@ -20,12 +20,6 @@ int f2(int &a)
     return a;
 }
 
-void sum(std::vector<int> &c, const std::vector<int> &b, const std::vector<int> &a)
-{
-
-    c[ii] = b[ii] + a[ii]
-}
-
 int main()
 {
     std::cout << "call by value\n";

@@ -11,8 +11,10 @@
 
 int main()
 {
-
-    //return EXIT_SUCCESS;
-    return 6;
+#ifdef FAILURE
+    return EXIT_FAILURE;
+#else
+    return EXIT_SUCCESS;
+#endif
 
 }

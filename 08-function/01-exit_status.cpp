@@ -12,10 +12,7 @@
 int main()
 {
 
-#ifdef FAILURE
-    return EXIT_FAILURE;
-#else
-    return EXIT_SUCCESS;
-#endif
+    //return EXIT_SUCCESS;
+    return 6;
 
 }

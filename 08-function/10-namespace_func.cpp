@@ -34,15 +34,28 @@ namespace R
     //void Q::V::g() {} 
 }
 
+//namespace Q
+//{
+//    namespace V
+//    {
+//        void g()
+//        {
+//            std::cout << __func__ << "\n";
+//        }
+//    } 
+//       
+//}
+
 // OK: global namespace encloses Q
 void Q::V::g()
 {
     std::cout << __func__ << "\n";
 }
-
+#include <cmath>
 int main()
 {
     Q::V::f();
     Q::V::g();
+
     return 0;
 }

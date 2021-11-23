@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 /***
  * The following two representations are valid
@@ -19,7 +20,8 @@ int main(int argc, char *argv[])
 {
     for(int ii = 0; ii < argc; ii = ii + 1)
     {
-        std::cout << "argv[" << ii << "] :"<< argv[ii] << "\n";
+        std::string s = argv[ii];
+        std::cout << "argv[" << ii << "] :"<< s << "\n";
     }
 
     return 0;

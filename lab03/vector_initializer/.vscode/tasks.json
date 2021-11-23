@@ -1,0 +1,82 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build project: all",
+            "command": "make",
+            "args": [
+                "a.out",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "build project(Release)."
+        },
+        {
+            "type": "shell",
+            "label": "build project: main",
+            "command": "make",
+            "args": [
+                "main.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "build project(Release)."
+        },
+        {
+            "type": "shell",
+            "label": "build project: initializer",
+            "command": "make",
+            "args": [
+                "initializer.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "build project(Release)."
+        },
+        {
+            "type": "shell",
+            "label": "build project: utils",
+            "command": "make",
+            "args": [
+                "utils.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "build project(Release)."
+        },
+        {
+            "type": "shell",
+            "label": "clean project",
+            "command": "make",
+            "args": [
+                "clean",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "clean project(Release)."
+        },
+        {
+            "type": "shell",
+            "label": "build project: DEBUG",
+            "command": "make",
+            "args": [
+                "a.out",
+                "CPPFLAGS=-g"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "build project(DEBUG)."
+        },
+    ],
+    "version": "2.0.0"
+}

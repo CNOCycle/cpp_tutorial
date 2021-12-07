@@ -7,7 +7,7 @@
         networks:
             - frontend
         volumes:
-            - ./srv/{USER_ID}/config:/home/coder/.config/code-server/
+            - ./srv/{USER_ID}/config/config.yaml:/home/coder/.config/code-server/config.yaml
             - ./srv/shared:/shared:ro
 
         mem_limit: 768m

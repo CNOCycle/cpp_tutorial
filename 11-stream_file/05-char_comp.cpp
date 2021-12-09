@@ -2,7 +2,7 @@
 #include "spdlog/spdlog.h"
 
 /**
- *  > g++ -I /shared/include/ cpp_tutorial/11-stream_file/06-char_comp.cpp -L /shared/lib/ -lspdlog
+ *  > g++ -I /shared/include/ cpp_tutorial/11-stream_file/05-char_comp.cpp -L /shared/lib/ -lspdlog
 **/
 
 int main()

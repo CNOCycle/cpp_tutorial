@@ -42,10 +42,10 @@ std::string log = R"(
     std::stringstream ss;
     ss << log;
 
-    std::string prefix = R"(^\[[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}Z\])";
-    std::string level = R"(info|error)";
+    std::string prefix = R"(^\[\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z\])";
+    std::string level = R"((info|error))";
     std::string pattern = prefix + R"(\s+)" + level;
-    std::regex r(pattern);
+    std::regex r(pattern, std::regex_constants::ECMAScript);
     std::smatch sm;
 
     while(!ss.eof())

@@ -13,3 +13,6 @@
 
 # `get_password`
 * 讀出所有容器預設的密碼
+
+# 注意事項
+`.cache/vscode-cpptools/ipch/` 會佔據大量硬碟空間

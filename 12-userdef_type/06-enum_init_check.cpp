@@ -2,11 +2,11 @@
 #include <iostream>
 #include <string>
 
-enum season {spring = 0, summer = 1, fall = 3, winter = 4};
+enum season {spring = 0, summer = 1, fall = 2, winter = 3};
 
 season init(int source)
 {
-    int SEASON_MAX = 4;
+    int SEASON_MAX = 3;
     if(source > SEASON_MAX || source < 0)
     {
         std::string err_msg = "received illegal value: " + std::to_string(source);

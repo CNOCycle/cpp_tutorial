@@ -2,8 +2,9 @@
 
 int main()
 {
-    enum class fruit { orange, apple };
-    enum class color { red, orange };
+    // orange is defined twice
+    enum fruit { orange, apple };
+    enum color { red, orange };
     fruit a = fruit::apple;
     color b = color::red;
     std::cout << static_cast<int>(a) << "\n";

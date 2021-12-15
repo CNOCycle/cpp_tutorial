@@ -1,6 +1,6 @@
 #include <iostream>
 
-struct NotRreferred
+struct NotPreferred
 {
     double rel = 1.0;
     double img = 2.0;
@@ -31,7 +31,7 @@ Complex init(double _rel = 5.0, double _img = 6.0)
 
 int main()
 {
-    NotRreferred a;
+    NotPreferred a;
     std::cout << a.rel << " + " << a.img << "i\n";
     Complex b;
     std::cout << b.rel << " + " << b.img << "i\n";
